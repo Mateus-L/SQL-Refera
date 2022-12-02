@@ -4,7 +4,7 @@ WITH alugados as(
 			count(f.film_id) AS quantidade
 		# Retornar id do filme e Contagem de quantas vezes os titulos foram alugados
 			FROM film f
-			INNER JOIN inventory i		ON	f.film_id		=	i.film_id 		
+			INNER JOIN inventory i			ON	f.film_id	=	i.film_id 		
 			INNER JOIN rental r			ON	i.inventory_id	=	r.inventory_id
 		GROUP BY 1		
 		ORDER BY 2 DESC	
