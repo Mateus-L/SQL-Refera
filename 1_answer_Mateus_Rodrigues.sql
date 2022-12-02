@@ -8,5 +8,5 @@ SELECT
 /* 	Tabela "film" para informações gerais de cada filme, "inventory" para gerar o relacionamento com "rental" 
 	que possui informações de cada aluguel */
 GROUP BY 1		# agrupar por filmes
-ORDER BY 2 DESC	# organizar os filmes com maior quantidade primeiro
+ORDER BY 2 DESC		# organizar os filmes com maior quantidade primeiro
 LIMIT 2 		# retornar apenas os 2 
