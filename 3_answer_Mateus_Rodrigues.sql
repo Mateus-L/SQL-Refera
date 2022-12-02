@@ -10,6 +10,6 @@ SELECT
 	COUNT(nc.id_cliente) AS qtd_clientes
 # Data em formatação Mês-Ano (em outros bancos, como o postgres, utilizaria date_trunc) e contagem de clientes por data 
 FROM rental r
-INNER JOIN nc	ON r.rental_date = nc.primeiro_aluguel #JOIN com a subquery criada
-GROUP BY 1 #agrupamento pelo mês
-ORDER BY r.rental_date ASC #ordenar por mês
+INNER JOIN nc	ON r.rental_date = nc.primeiro_aluguel 	#JOIN com a subquery criada
+GROUP BY 1 			#agrupamento pelo mês
+ORDER BY r.rental_date ASC 	#ordenar por mês
