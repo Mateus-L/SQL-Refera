@@ -1,2 +1,4 @@
 # SQL-Refera
-Desafio em SQL 
+Desafio em SQL 🚀
+
+Banco utilizado: MariaDB
